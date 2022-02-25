@@ -7,8 +7,8 @@
     <title>{%block title%}{%endblock%}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href={{ url_for('static',filename='images/favicon.png')}} rel="icon">
+    <link href={{ url_for('static',filename='images/apple-touch-icon.png')}} rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -36,7 +36,7 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a class="active" href={{ url_for('static',filename='index.html')}}>Home</a></li>
                 <li><a href="about.html">Acerca de</a></li>
                 <li><a href="resume.html">Resumen</a></li>
                 <li><a href="services.html">Servicios</a></li>

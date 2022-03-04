@@ -12,14 +12,14 @@ def index():
     }
     return render_template('index.html',data=data)
 
-@app.route('/about/')
-def estudios():
-    estudios = ['Tecnico en Redes','Tecnico en Reparacion de Computadoras','Tecnico en Reparacion de Celulares',
-                'Ciencia de Computadoras - CS50','Estudiante Ingeniria en Computacion',
-                'Graduado Br Escuela Normal Maria Mazzarello','Academia Sabatina Jovenes Tlento']
-    data={ 
-        'estudios': estudios} 
-    return render_template('about.html',data=data)
+@app.route('/about')
+def about():
+    #estudios = ['Tecnico en Redes','Tecnico en Reparacion de Computadoras','Tecnico en Reparacion de Celulares',
+    #            'Ciencia de Computadoras - CS50','Estudiante Ingeniria en Computacion',
+    #            'Graduado Br Escuela Normal Maria Mazzarello','Academia Sabatina Jovenes Tlento']
+    #data={ 
+    #    'estudios': estudios} 
+    return render_template('about.html')
 
 def noencontrado(error):
     print('404')
@@ -28,4 +28,5 @@ def noencontrado(error):
 if __name__ == '__main__':
     app.register_error_handler(404, noencontrado)
     app.run(debug=True)
+    
     

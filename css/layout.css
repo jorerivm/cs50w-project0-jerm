@@ -472,8 +472,11 @@ body {
     margin-bottom: 0;
   }
 
-  table, td {
-    border: 1px #14ADC6;
+  table, th, td{
+    border: 2px #14ADC6;
+  }
+  .table table{
+    border: 2px #14ADC6;
   }
   /*--------------------------------------------------------------
   # Cta
